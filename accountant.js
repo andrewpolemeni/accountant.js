@@ -40,9 +40,11 @@ let accountant = {
 	}
 };
 
+Each method has an optional paremeter for floating point numbers.
+The default will output to two decimal places.
+
 accountant.calculateCompoundInterestTotalAmount(10, 5, 20, 1);
 accountant.calculateCompoundInterest(10, 5, 20, 1);
-accountant.calculateNumberOfPeriods(1 / 12, 200, -2200, 0);
 accountant.getPresentValue(10000, 5, 20);
 accountant.getFutureValue(10000, 5, 20);
 accountant.getPresentValueOfAnnuity(); // Working on method
