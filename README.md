@@ -1,5 +1,5 @@
 # accountant.js
-Accountant.js is a vanilla javascript open source project.
+Accountant.js is a vanilla javascript open source project.<br />
 It contains simple functions to calculate functions related to finance.<br />
 Currently a small library but would love to grow it in size.<br />
 
