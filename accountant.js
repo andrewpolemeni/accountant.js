@@ -40,8 +40,8 @@ let accountant = {
 	}
 };
 
-Each method has an optional paremeter for floating point numbers.
-The default will output to two decimal places.
+// Each method has an optional paremeter for floating point numbers.
+// The default will output to two decimal places.
 
 accountant.calculateCompoundInterestTotalAmount(10, 5, 20, 1);
 accountant.calculateCompoundInterest(10, 5, 20, 1);
