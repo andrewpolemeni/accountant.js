@@ -4,8 +4,11 @@ It contains simple functions to calculate functions related to finance.<br />
 Currently a small library but would love to grow it in size.<br />
 
 # Current Methods
-let a = accountant.calculateCompoundInterestTotalAmount(10, 5, 20, 1); <br />
-let b = accountant.calculateCompoundInterest(10, 5, 20, 1);<br />
-let c = accountant.getPresentValue(10000, 5, 20);<br />
-let d = accountant.getFutureValue(10000, 5, 20);<br />
-console.log(a, b, c, d); // output result of method to console.<br />
+Each method has an optional paremeter for floating point numbers. <br />The default will output to two decimal places.
+
+accountant.calculateCompoundInterestTotalAmount(10, 5, 20, 1);
+accountant.calculateCompoundInterest(10, 5, 20, 1);
+accountant.getPresentValue(10000, 5, 20);
+accountant.getFutureValue(10000, 5, 20);
+accountant.getPresentValueOfAnnuity(); // Working on method
+accountant.getFutureValueOfAnnuity(10000, 5, 20);
