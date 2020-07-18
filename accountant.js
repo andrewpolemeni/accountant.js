@@ -27,19 +27,24 @@ let accountant = {
 		var futureValue = presentValue * (Math.pow(baseNumber, numberOfYears));
 		return futureValue.toFixed(decimalPlaces);
 	},
-	getPresentValueOfAnnuity: function calculatePresentValueOFAnnuity() {
+	getPresentValueOfAnnuity: function calculatePresentValueOFAnnuity(periodicDepositAmount, interestRate, periodicRateOfInflation = 1, periods, decimalPlaces = 2) {
 
 	},
-	getFutureValueOfAnnuity: function calculateFutureValueOFAnnuity() {
-
-	},
+	getFutureValueOfAnnuity: function calculateFutureValueOFAnnuity(periodicDepositAmount, interestRate, periods, decimalPlaces = 2) {
+		var total = 0;
+		for (var i = 0; i < periods; i++) {
+			total += 1;
+			total *= (1 + (interestRate / 100));
+		}
+		return (total * periodicDepositAmount).toFixed(decimalPlaces)
+	}
 };
 
-
-let a = accountant.calculateCompoundInterestTotalAmount(10, 5, 20, 1);
-let b = accountant.calculateCompoundInterest(10, 5, 20, 1);
-let c = accountant.getPresentValue(10000, 5, 20);
-let d = accountant.getFutureValue(10000, 5, 20);
-let e = accountant.getPresentValueOfAnnuity();
-let f = accountant.getFutureValueOfAnnuity();
-console.log(a, b, c, d); // output result of method to console.
+accountant.calculateCompoundInterestTotalAmount(10, 5, 20, 1);
+accountant.calculateCompoundInterest(10, 5, 20, 1);
+accountant.calculateNumberOfPeriods(1 / 12, 200, -2200, 0);
+accountant.getPresentValue(10000, 5, 20);
+accountant.getFutureValue(10000, 5, 20);
+accountant.getPresentValueOfAnnuity(); // Working on method
+accountant.getFutureValueOfAnnuity(10000, 5, 20);
+console.log(c); // output result of method to console.
