@@ -47,4 +47,3 @@ accountant.getPresentValue(10000, 5, 20);
 accountant.getFutureValue(10000, 5, 20);
 accountant.getPresentValueOfAnnuity(); // Working on method
 accountant.getFutureValueOfAnnuity(10000, 5, 20);
-console.log(c); // output result of method to console.
