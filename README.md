@@ -1,7 +1,6 @@
 # Accountant.js
 Accountant.js is a vanilla javascript open source project.<br />
 It contains simple functions to calculate functions related to finance.<br />
-Currently a small library but would love to grow it in size.<br />
 
 # Current Methods
 Each method has an optional paremeter for floating point numbers. <br />The default will output to two decimal places.
